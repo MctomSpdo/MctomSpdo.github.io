@@ -1,7 +1,66 @@
 body, html {
     border: 0;
     margin: 0;
-    background-color: #000;
-    color: #fff;
     font-family: Calibir, Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+/************************** HEADER **********************************/
+
+header {
+    height: 8vh;
+    width: 100vw;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 30% 70%;
+}
+
+#header-icon-wrapper {
+    height: 5vh;
+}
+
+#header-icon-wrapper > img {
+    height: 100%;
+    width: auto;
+    clip-path: circle(50% at 50% 50%);
+}
+
+#header-text-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 8vh;
+}
+
+#header-text-wrapper > h1 {
+    margin: 0;
+}
+
+/*************************** MAIN *********************/
+
+main {
+    width: 100vw;
+    position: absolute;   
+    top: 20vh;
+}
+
+#banner-img-wrapper {
+    width: 100vw;
+}
+
+#banner-img-wrapper {
+    filter: blur(0.3vh);
+}
+
+#content {
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    height: 50vh;
 }
